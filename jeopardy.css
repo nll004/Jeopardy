@@ -1,0 +1,50 @@
+table {
+  color: whitesmoke;
+  text-align: center;
+}
+th {
+  background-color: #115ff4;
+  border: 15px solid #0c0d3d;
+  text-transform: uppercase;
+  font: 2rem bold Arial, serif;
+}
+td {
+  text-transform: capitalize;
+  padding: 0.5rem;
+  background-color: #0c0d3d;
+  font: 1.5rem bold Arial, sans-serif;
+  position: relative;
+  height: 250px;
+  width: 250px;
+}
+div {
+  background-color: #0c0d3d;
+  text-align: center;
+}
+
+#start-button {
+  border: 3px solid #4e4e4e;
+  border-radius: 10px;
+  font: 1rem;
+}
+
+.question {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  font: 0.5rem;
+  background-color: #4e4e4e;
+}
+.category {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  font: rem;
+  color: #fffb1c;
+  z-index: 2;
+}
