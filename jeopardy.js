@@ -104,14 +104,16 @@ function handleClick(evt) {
 function showLoadingView() {
     $tableBody.empty();
     $tableHead.empty();
-    console.log('start loading')
+   //$('<div>').addClass('spinner').appendTo($('section'))
+   // console.log('start loading')
 }
 
 /** Remove the loading spinner and update the button used to fetch data. */
 
-function hideLoadingView() {
-    console.log('done loading')
-}
+// function hideLoadingView() {
+//     console.log('done loading')
+//     $('.spinner').remove();
+// }
 
 /** Start game:
  *
@@ -123,7 +125,7 @@ function hideLoadingView() {
 async function setupAndStart() {
     showLoadingView();
     await getCategoryIds();
-    hideLoadingView();
+    //hideLoadingView();
 }
 
 $('#start-button').on('click', setupAndStart)

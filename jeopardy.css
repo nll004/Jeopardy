@@ -2,6 +2,16 @@ table {
   color: whitesmoke;
   text-align: center;
 }
+h1 {
+  margin: 0;
+  padding: 20px;
+  width: 1490px;
+  background-color: #0c0d3d;
+  font-size: 5rem;
+  text-align: center;
+  color: #fffb1c;
+  text-shadow: 2px 2px #4e4e4e;
+}
 th {
   background-color: #0c0d3d;
   padding: 15px;
@@ -13,8 +23,8 @@ td {
   background-color: #0c0d3d;
   font: 1.5rem Arial, sans-serif;
   position: relative;
-  height: 250px;
-  width: 250px;
+  height: 300px;
+  width: 300px;
 }
 div {
   background-color: #0c0d3d;
@@ -26,7 +36,9 @@ div {
   top: 0;
   left: 0;
   z-index: 1;
-  font: 0.5rem;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 25px 15px;
 }
 .category {
   position: absolute;
@@ -34,7 +46,10 @@ div {
   height: 100%;
   top: 0;
   left: 0;
+  box-sizing: border-box;
+  padding: 100px 0px;
   color: #fffb1c;
+  text-shadow: 4px 4px #616016;
   font-size: 4rem;
   z-index: 2;
 }
