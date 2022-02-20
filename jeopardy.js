@@ -11,7 +11,7 @@ const width = 5;
 async function getCategoryIds() {
     // stored ids in a set to avoid duplicates
     const idSet = new Set;
-    const getCategories = await axios.get(`http://jservice.io/api/random?count=10`);
+    const getCategories = await axios.get(`https://jservice.io/api/random?count=10`);
 
     for (let i = 0; i < width; i++){
       let id = getCategories.data[i].category_id; // Sometimes throws error if no .id is found?
@@ -38,7 +38,7 @@ async function getCategory(catId) {
     let arr = Array.from(catId);
 
     for (let i = 0; i < arr.length; i++){
-        let ids = await axios.get(`http://jservice.io/api/clues?category=${arr[i]}`);
+        let ids = await axios.get(`https://jservice.io/api/clues?category=${arr[i]}`);
         let categorySet = {};
         let clueArray = [];
         for (let ind = 0; ind < height; ind++){
